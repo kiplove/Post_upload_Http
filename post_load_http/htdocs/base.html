@@ -1,0 +1,22 @@
+<HTML>
+	<TITLE>Index</TITLE>
+	<HEAD>
+	<META charset="utf-8">
+	</HEAD>
+	<BODY>
+		<P>Welcome to kiplove's webserver.</P>	
+		<FORM METHOD="POST" ACTION="upload.cgi" enctype="multipart/form-data">
+		<input type="file" name="FILE" /> 
+		<input type="submit" name="subit" value="OK"/>
+		</FORM>
+		<P>查看文件</P>
+		<FORM METHOD="GET" ACTION="show.cgi">
+		<input type="submit" value="check file">
+		</FORM>
+		<form action="edit.cgi" method='post'>
+		<b>File name:</b><br />
+		<input type='text' name='filename' />
+		<input type='submit' value='Open'>
+		</form>
+	</BODY>
+</HTML>
